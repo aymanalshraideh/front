@@ -1,0 +1,234 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>Carousel 01</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="media/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="media/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+    <link rel="stylesheet" href="media/css/style.css">
+<style>
+
+    .navvv {
+       
+        position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5%;
+} 
+.navvv select{
+    height: 50px;
+
+}
+.navvv a{
+    color: #f1f1f1;
+}
+.navvv a:hover{
+    color: #635656;
+}
+
+.m{
+    position: relative; 
+}
+    .m #a{
+        position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+    }
+    #list  {
+        color :aliceblue;
+        list-style: none;
+
+    }
+    #list ul {
+        color :aliceblue;
+        list-style: none;
+
+    }
+    .sidenav {
+         height: 100%;
+         width: 0;
+         position: fixed;
+         z-index: 1;
+         top: 0;
+         right: 0;
+         background-color: #111;
+         overflow-x: hidden;
+         transition: 0.5s;
+         padding-top: 60px;
+}
+
+     .sidenav a {
+       padding: 8px 8px 8px 32px;
+       text-decoration: none;
+       font-size: 25px;
+       color: #635656;
+       display: block;
+       transition: 0.3s;
+     }
+     
+     .sidenav a:hover {
+       color: #f1f1f1;
+     }
+     
+     .sidenav .closebtn {
+       position: absolute;
+       top: 0;
+       right: 25px;
+       font-size: 36px;
+       margin-left: 50px;
+     }
+     .dropdown-btn {
+       padding: 6px 8px 6px 16px;
+       text-decoration: none;
+       font-size: 20px;
+       color: #818181;
+       display: block;
+       border: none;
+       background: none;
+       width:100%;
+       text-align: left;
+       cursor: pointer;
+       outline: none;
+}
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+  
+    <div id="Sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Categoury 1</a>
+
+        <a href="#">Categoury 2</a>
+        <a href="#">Categoury 3</a>
+        <a href="#" class="dropdown-btn">Dropdown
+            <i class="fa fa-caret-down"></i>
+        </a>
+          <div class="dropdown-container">
+            <a href="#">Sub Categoury 1</a>
+
+        <a href="#">Sub Categoury 2</a>
+        <a href="#">Sub Categoury 3</a>
+          </div>
+        <a href="#">Categoury 4</a>
+      </div>
+            <div class="m">
+                <div class="navvv" >
+                 <div>
+                    <a href=""><h6> English</h6></a>
+                    <a href=""><h6>Arabic</h6> </a>
+                 </div>
+                    <a href=""> <img src="./media/images/icons/x.png" width="100px" alt=""></a>
+                 
+                   
+                    <a   onclick="openNav()" >     <img src="./media/images/icons/bars.png" alt="" width="50px" height="50px">
+           
+                
+                </a> 
+
+              
+                    
+                
+                      
+                       
+    <a id="a" href="https://colorlib.com/wp/template/carousel-01/">
+        <div class="home-slider owl-carousel js-fullheight">
+            
+            <div class="slider-item js-fullheight" style="background-image: url(media/images/slider-1.jpg);">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+                        <div class="col-md-12 ftco-animate">
+                            <div class="text w-100 text-center">
+                                <h2>Best Place to Travel</h2>
+                                <h1 class="mb-3">Norway</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slider-item js-fullheight" style="background-image: url(media/images/slider-2.jpg);">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+                        <div class="col-md-12 ftco-animate">
+                            <div class="text w-100 text-center">
+                                <h2>Best Place to Travel</h2>
+                                <h1 class="mb-3">Japan</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slider-item js-fullheight" style="background-image: url(media/images/slider-3.jpg);">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+                        <div class="col-md-12 ftco-animate">
+                            <div class="text w-100 text-center">
+                                <h2>Best Place to Travel</h2>
+                                <h1 class="mb-3">Singapore</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </a>
+</div>
+    <script src="media/js/jquery.min.js"></script>
+    <script src="media/js/popper.js"></script>
+    <script src="media/js/bootstrap.min.js"></script>
+    <script src="media/js/owl.carousel.min.js"></script>
+    <script src="media/js/main.js"></script>
+    <script>
+       function openNav() {
+  document.getElementById("Sidenav").style.width = "300px";
+}
+
+function closeNav() {
+  document.getElementById("Sidenav").style.width = "0";
+}
+
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+    </script>
+</body>
+</html>
